@@ -7,6 +7,7 @@ var hammer;
 var rubber;
 var plane;
 var copper;
+var pendulum;
 function setup(){
     var canvas = createCanvas(1200,600);
     engine = Engine.create();
@@ -16,7 +17,7 @@ function setup(){
     hammer = new Hammer(600,300);
     rubber=new Rubber(700,400);
     copper=new Copper(400,400);
-
+    pendulum=new Pendulum(80,400);
 
 }
 
@@ -29,5 +30,5 @@ function draw(){
     hammer.display();
     rubber.display();
     copper.display();
- 
+    pendulum.display();
 }
